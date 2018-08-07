@@ -54,7 +54,7 @@ register_specialty = RegisterSpecialty.as_view()
 
 class AppointmentList(ListView):
 	model = Appointment
-	template_name = 'appointment_list.html'
+	template_name = 'ListAppointment.html'
 	def get_context_data(self, **kwargs):
 		context = super(AppointmentList, self).get_context_data(**kwargs)
 		return context
